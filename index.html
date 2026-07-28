@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebComic J0j0Live — Manga episodico, directo a tu pantalla</title>
+
+<!-- SEO: descripcion y canonical. Reemplazar el dominio de ejemplo por el real. -->
+<meta name="description" content="Manga episodico en tinta, capitulo a capitulo. 48 capitulos, publicacion semanal. Sin relleno, ritmo de accion directo a tu pantalla.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.webcomicj0j0live.com/">
+
+<!-- Open Graph / redes sociales -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="WebComic J0j0Live — Manga episodico, directo a tu pantalla">
+<meta property="og:description" content="Manga episodico en tinta, capitulo a capitulo. 48 capitulos, publicacion semanal. Sin relleno, ritmo de accion directo a tu pantalla.">
+<meta property="og:url" content="https://www.webcomicj0j0live.com/">
+<meta property="og:image" content="https://www.webcomicj0j0live.com/og-image.jpg">
+<meta property="og:locale" content="es_AR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WebComic J0j0Live — Manga episodico, directo a tu pantalla">
+<meta name="twitter:description" content="Manga episodico en tinta, capitulo a capitulo. 48 capitulos, publicacion semanal.">
+<meta name="twitter:image" content="https://www.webcomicj0j0live.com/og-image.jpg">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- CSP basica: solo fuentes propias, Google Fonts, y estilos inline (usados en el markup actual) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Structured data: serie episodica -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "name": "WebComic J0j0Live",
+  "url": "https://www.webcomicj0j0live.com/",
+  "description": "Manga episodico en tinta, capitulo a capitulo, con publicacion semanal.",
+  "inLanguage": "es",
+  "genre": ["Accion", "Drama", "Sobrenatural"],
+  "numberOfEpisodes": 48,
+  "sameAs": [
+    "https://instagram.com/",
+    "https://x.com/"
+  ]
+}
+</script>
+</head>
+<body>
+
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="logo">WebComic<span> J0j0Live</span></a>
+
+      <nav class="nav-links">
+        <a href="#showcase">Manga</a>
+        <a href="#showcase">Promo</a>
+        <a href="#contact">About us</a>
+        <a href="#showcase">Design</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-icon sun">☀</span>
+            <span class="theme-toggle-icon moon">☾</span>
+            <span class="theme-toggle-thumb"></span>
+          </span>
+        </button>
+        <a href="#" class="btn btn-outline">Sign in</a>
+        <a href="#" class="btn btn-solid">Sign up</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero">
+    <div class="kanji-bg" style="top:-40px; left:-20px; font-size:220px;">漫画</div>
+    <div class="kanji-bg" style="bottom:-60px; right:-30px; font-size:180px;">読</div>
+
+    <svg class="ink-splatter" style="top:30px; left:40%; width:70px;" viewBox="0 0 100 100" fill="var(--ink)">
+      <circle cx="20" cy="20" r="6"/><circle cx="35" cy="10" r="3"/><circle cx="10" cy="40" r="2.5"/><circle cx="50" cy="30" r="4"/>
+    </svg>
+
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-eyebrow">Webcomic studio</div>
+        <h1>Manga episodico,<br><span class="accent">directo</span> a tu pantalla</h1>
+        <p>Historias ilustradas en tinta, capitulo a capitulo. Trazo crudo, ritmo de accion, sin relleno.</p>
+
+        <div class="hero-actions">
+          <a href="#showcase" class="btn btn-red">Leer ahora</a>
+          <a href="#contact" class="btn btn-outline">Contacto</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><strong>48</strong>capitulos</div>
+          <div><strong>12k</strong>lectores</div>
+          <div><strong>Semanal</strong>publicacion</div>
+        </div>
+      </div>
+
+      <div class="hero-collage">
+        <div class="panel panel-a"></div>
+        <div class="panel panel-b"></div>
+        <div class="panel panel-c"><div class="speed-lines"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SOCIAL MINI (cerca del hero, sobre el fondo)
+       ============================================ -->
+  <div class="container" style="margin-top:-60px; position:relative; z-index:2; display:flex; justify-content:flex-start;">
+    <div class="social-mini" id="socialMiniTop"></div>
+  </div>
+
+  <!-- ============================================
+       SHOWCASE / GALERIA
+       ============================================ -->
+  <section class="showcase" id="showcase">
+    <div class="container">
+      <div class="section-head">
+        <h2>Ultimos <span class="accent">capitulos</span></h2>
+        <p>Un vistazo a las portadas mas recientes de la serie.</p>
+      </div>
+
+      <div class="showcase-layout">
+        <div class="gallery-grid" id="galleryGrid"></div>
+
+        <aside class="trending">
+          <h3 class="trending-title">Top <span class="accent">de la semana</span></h3>
+          <ul class="trending-list" id="trendingList"></ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer id="contact">
+    <div class="container">
+
+      <div class="footer-columns" id="footerColumns">
+        <!-- Las 3 primeras columnas (Sitio, Explorar, Comunidad) se generan
+             desde datos (ver script). Esta columna de Social queda fija
+             porque su contenido (tarjetas de comunidad) no es una simple
+             lista de links. -->
+        <div class="footer-col footer-col-social">
+          <h4 class="footer-col-title">Social</h4>
+          <div id="socialCtas"></div>
+        </div>
+      </div>
+
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">WebComic<span> J0j0Live</span></a>
+          <p class="footer-tagline">Manga episodico, capitulo a capitulo. Trazo crudo, sin relleno.</p>
+        </div>
+        <div class="social-mini" id="socialMiniFooter"></div>
+      </div>
+
+      <div class="footer-note">
+        <span>WebComic J0j0Live — 2024/2026</span>
+        <span>Hecho con tinta y cafe</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+
+</body>
+</html>
